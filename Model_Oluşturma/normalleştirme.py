@@ -60,7 +60,7 @@ model.summary()
 
 model.compile(loss="categorical_crossentropy",optimizer="adam",metrics=["accuracy"])
 
-model.fit(X_train, y_train, nb_epoch=60, batch_size=16, callbacks=[history])
+model.fit(X_train, y_train, nb_epoch=40, batch_size=16, callbacks=[history])
 
 
 plt.plot(model.history.history["accuracy"])
